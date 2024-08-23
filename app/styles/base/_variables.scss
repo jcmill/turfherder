@@ -1,0 +1,37 @@
+@use 'sass:math';
+@import '../helpers/functions';
+
+$font-size: 1rem;
+$scale: 1em;
+$golden: 1.618em;  
+
+// golden ratio increments
+
+$root: stripUnit($golden);
+$halfroot: math.pow($root, 0.5);
+$fourthrroot: math.pow($root, 0.25);
+$eighthroot: math.pow($root, 0.125);
+
+@debug "root:" $root;
+@debug "halfroot:" $halfroot;
+@debug "fourthroot:" $fourthrroot;
+@debug "eighthroot:" $eighthroot;
+
+// size scales
+
+$sm: math.div($scale, $root);
+$md: $scale;
+$lg: $scale * $root;
+$xsm: math.div($sm, $root);
+$xxsm: math.div($xsm, $root);
+$xlg: $lg * $root;
+$xxlg: $xlg * $root;
+
+@debug "xxsm size:" $xxsm;
+@debug "xsm size:" $xsm;
+@debug "sm size:" $sm;
+@debug "md size:" $md;
+@debug "lg size:" $lg;
+@debug "xlg size:" $xlg;
+@debug "xxlg size:" $xxlg;
+

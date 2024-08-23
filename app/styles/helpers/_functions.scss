@@ -1,0 +1,11 @@
+@use 'sass:math';
+
+@function stripUnit($value) {
+  // if value has a unit, strip it
+  @if math.is-unitless($value) == false {
+    @return math.div($value, ($value * 0 + 1)); // math that changes a value in the divisor to a unitless 1 and divides the dividend vaule.
+  } @else {
+    // else return value
+    @return $value;
+  }
+};

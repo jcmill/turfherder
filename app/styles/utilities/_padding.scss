@@ -1,0 +1,8 @@
+@use '../base/variables';
+@import '../helpers/maps';
+
+@each $name, $var in $paddings {
+  .u-p#{$name} {
+    padding: $var;
+  }
+}

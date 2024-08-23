@@ -1,0 +1,13 @@
+@use 'sass:map';
+@import '../base/variables';
+
+$paddings: (
+  0: 0,
+  1: $xxsm,
+  2: $xsm,
+  3: $sm,
+  4: $md,
+  5: $lg,
+  6: $xlg,
+  7: $xxlg,
+);
