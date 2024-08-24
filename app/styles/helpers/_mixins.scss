@@ -1,0 +1,14 @@
+@import 'maps';
+
+@mixin classBuild($map, $attribute, $seperator: '-', $mod: 'mod') {
+  @each $key, $value in $map {
+    &#{if($key != $mod, #{$seperator}#{$key}, '')} {
+      @if type-of($value) == 'map' {
+        @include classBuild($value, $attribute);
+      }
+      @else {
+        #{$attribute}: $value;
+      }
+    }
+  }
+}

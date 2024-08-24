@@ -1,13 +1,70 @@
 @use 'sass:map';
 @import '../base/variables';
 
-$paddings: (
+$pvalues: (
   0: 0,
-  1: $xxsm,
-  2: $xsm,
-  3: $sm,
-  4: $md,
-  5: $lg,
-  6: $xlg,
-  7: $xxlg,
+  xxsm: $xxsm,
+  xsm: $xsm,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xlg: $xlg,
+  xxlg: $xxlg,
+);
+
+$posvalues: (
+  x: (
+    xxsm: 0 $xxsm 0 $xxsm,
+    xsm: 0 $xsm 0 $xsm,
+    sm: 0 $sm 0 $sm,
+    md: 0 $md 0 $md,
+    lg: 0 $lg 0 $lg,
+    xlg: 0 $xlg 0 $xlg,
+    xxlg: 0 $xxlg 0 $xxlg,
+  ),
+  y: (
+    xxsm: $xxsm 0 $xxsm 0,
+    xsm: $xsm 0 $xsm 0,
+    sm: $sm 0 $sm 0,
+    md: $md 0 $md 0,
+    lg: $lg 0 $lg 0,
+    xlg: $xlg 0 $xlg 0,
+    xxlg: $xxlg 0 $xxlg 0,
+  ),
+  t: (
+    xxsm: $xxsm 0 0 0,
+    xsm: $xsm 0 0 0,
+    sm: $sm 0 0 0,
+    md: $md 0 0 0,
+    lg: $lg 0 0 0,
+    xlg: $xlg 0 0 0,
+    xxlg: $xxlg 0 0 0,
+  ),
+  r: (
+    xxsm: 0 $xxsm 0 0,
+    xsm: 0 $xsm 0 0,
+    sm: 0 $sm 0 0,
+    md: 0 $md 0 0,
+    lg: 0 $lg 0 0,
+    xlg: 0 $xlg 0 0,
+    xxlg: 0 $xxlg 0 0,
+  ),
+  b: (
+    xxsm: 0 0 $xxsm 0,
+    xsm: 0 0 $xsm 0,
+    sm: 0 0 $sm 0,
+    md: 0 0 $md 0,
+    lg: 0 0 $lg 0,
+    xlg: 0 0 $xlg 0,
+    xxlg: 0 0 $xxlg 0,
+  ),
+  l: (
+    xxsm: 0 0 0 $xxsm,
+    xsm: 0 0 0 $xsm,
+    sm: 0 0 0 $sm,
+    md: 0 0 0 $md,
+    lg: 0 0 0 $lg,
+    xlg: 0 0 0 $xlg,
+    xxlg: 0 0 0 $xxlg,
+  ),
 );

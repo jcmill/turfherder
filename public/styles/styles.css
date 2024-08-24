@@ -50,34 +50,129 @@ input, button, textarea, select {
     scroll-behavior: auto !important;
   }
 }
-.u-p0 {
-  padding: 0;
+.u-px-xxsm {
+  padding: 0 0.2360828548em 0 0.2360828548em;
 }
-
-.u-p1 {
-  padding: 0.2360828548em;
+.u-px-xsm {
+  padding: 0 0.3819820591em 0 0.3819820591em;
 }
-
-.u-p2 {
-  padding: 0.3819820591em;
+.u-px-sm {
+  padding: 0 0.6180469716em 0 0.6180469716em;
 }
-
-.u-p3 {
-  padding: 0.6180469716em;
+.u-px-md {
+  padding: 0 1em 0 1em;
 }
-
-.u-p4 {
-  padding: 1em;
+.u-px-lg {
+  padding: 0 1.618em 0 1.618em;
 }
-
-.u-p5 {
-  padding: 1.618em;
+.u-px-xlg {
+  padding: 0 2.617924em 0 2.617924em;
 }
-
-.u-p6 {
-  padding: 2.617924em;
+.u-px-xxlg {
+  padding: 0 4.235801032em 0 4.235801032em;
 }
-
-.u-p7 {
-  padding: 4.235801032em;
+.u-py-xxsm {
+  padding: 0.2360828548em 0 0.2360828548em 0;
+}
+.u-py-xsm {
+  padding: 0.3819820591em 0 0.3819820591em 0;
+}
+.u-py-sm {
+  padding: 0.6180469716em 0 0.6180469716em 0;
+}
+.u-py-md {
+  padding: 1em 0 1em 0;
+}
+.u-py-lg {
+  padding: 1.618em 0 1.618em 0;
+}
+.u-py-xlg {
+  padding: 2.617924em 0 2.617924em 0;
+}
+.u-py-xxlg {
+  padding: 4.235801032em 0 4.235801032em 0;
+}
+.u-pt-xxsm {
+  padding: 0.2360828548em 0 0 0;
+}
+.u-pt-xsm {
+  padding: 0.3819820591em 0 0 0;
+}
+.u-pt-sm {
+  padding: 0.6180469716em 0 0 0;
+}
+.u-pt-md {
+  padding: 1em 0 0 0;
+}
+.u-pt-lg {
+  padding: 1.618em 0 0 0;
+}
+.u-pt-xlg {
+  padding: 2.617924em 0 0 0;
+}
+.u-pt-xxlg {
+  padding: 4.235801032em 0 0 0;
+}
+.u-pr-xxsm {
+  padding: 0 0.2360828548em 0 0;
+}
+.u-pr-xsm {
+  padding: 0 0.3819820591em 0 0;
+}
+.u-pr-sm {
+  padding: 0 0.6180469716em 0 0;
+}
+.u-pr-md {
+  padding: 0 1em 0 0;
+}
+.u-pr-lg {
+  padding: 0 1.618em 0 0;
+}
+.u-pr-xlg {
+  padding: 0 2.617924em 0 0;
+}
+.u-pr-xxlg {
+  padding: 0 4.235801032em 0 0;
+}
+.u-pb-xxsm {
+  padding: 0 0 0.2360828548em 0;
+}
+.u-pb-xsm {
+  padding: 0 0 0.3819820591em 0;
+}
+.u-pb-sm {
+  padding: 0 0 0.6180469716em 0;
+}
+.u-pb-md {
+  padding: 0 0 1em 0;
+}
+.u-pb-lg {
+  padding: 0 0 1.618em 0;
+}
+.u-pb-xlg {
+  padding: 0 0 2.617924em 0;
+}
+.u-pb-xxlg {
+  padding: 0 0 4.235801032em 0;
+}
+.u-pl-xxsm {
+  padding: 0 0 0 0.2360828548em;
+}
+.u-pl-xsm {
+  padding: 0 0 0 0.3819820591em;
+}
+.u-pl-sm {
+  padding: 0 0 0 0.6180469716em;
+}
+.u-pl-md {
+  padding: 0 0 0 1em;
+}
+.u-pl-lg {
+  padding: 0 0 0 1.618em;
+}
+.u-pl-xlg {
+  padding: 0 0 0 2.617924em;
+}
+.u-pl-xxlg {
+  padding: 0 0 0 4.235801032em;
 }

@@ -1,8 +1,6 @@
 @use '../base/variables';
-@import '../helpers/maps';
+@import '../helpers/maps', '../helpers/mixins';
 
-@each $name, $var in $paddings {
-  .u-p#{$name} {
-    padding: $var;
-  }
+.u-p {
+  @include classBuild($posvalues, 'padding', ''); // (map name, property name wanted, 'namee spacing' ex - or -- to indicate a modifier
 }
