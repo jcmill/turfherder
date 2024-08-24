@@ -1,6 +1,12 @@
 @use 'sass:map';
 @import '../base/variables';
 
+$sep: "-"; // just for testinng
+
+$classValues: (xxsm xsm sm md lg xlg xxlg);
+$classAxis: (x y t r b l);
+
+
 $pvalues: (
   0: 0,
   xxsm: $xxsm,

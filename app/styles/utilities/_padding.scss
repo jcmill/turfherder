@@ -1,6 +1,18 @@
 @use '../base/variables';
 @import '../helpers/maps', '../helpers/mixins';
 
-.u-p {
-  @include classBuild($posvalues, 'padding', ''); // (map name, property name wanted, 'namee spacing' ex - or -- to indicate a modifier
+.test- {
+  @include utilityBuild($posvalues, padding);
 }
+
+// .u-p {
+  // @include classBuild($posvalues, 'padding', ''); // (map name, property name wanted, 'namee spacing' ex - or -- to indicate a modifier
+// }
+
+// .m-p {
+//   @include utilBuild($posvalues, 'margin', 'padding');
+// }
+
+// .u-mp {
+//   @include utilBuild($pvalues, $classAxis, 'padding', 'margin');
+// }

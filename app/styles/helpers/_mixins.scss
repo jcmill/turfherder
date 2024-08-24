@@ -1,10 +1,14 @@
+@use 'sass:list';
+@use "sass:string";
 @import 'maps';
 
-@mixin classBuild($map, $attribute, $seperator: '-', $mod: 'mod') {
+@mixin utilityBuild($map, $attribute, $seperator: '') {
   @each $key, $value in $map {
-    &#{if($key != $mod, #{$seperator}#{$key}, '')} {
+    &#{if($key != $map, #{$seperator}#{$key}, '')} {
       @if type-of($value) == 'map' {
-        @include classBuild($value, $attribute);
+        @each $att in $attribute {
+          @include utilityBuild($value, $att);
+        }
       }
       @else {
         #{$attribute}: $value;
@@ -12,3 +16,21 @@
     }
   }
 }
+
+@mixin utilBuild($sizes, $axis, $attributes...) {
+  @each $size, $var in $sizes {
+    $i: index($sizes, $size);
+    @each $axi in $axis {
+      $i: index($axis, $axi);
+      &-#{$axi}-#{$size} { 
+        @each $attribute in $attributes{
+          #{$attribute}: $var;
+        }
+      }
+    }
+  }
+}
+
+@debug string.slice("Helvetica Neue", 1, 1);
+@debug string.insert("Roboto Bold", "$", 1);
+@debug map-get($posvalues, x, xxsm)

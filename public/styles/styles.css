@@ -50,129 +50,129 @@ input, button, textarea, select {
     scroll-behavior: auto !important;
   }
 }
-.u-px-xxsm {
+.test-xxxsm {
   padding: 0 0.2360828548em 0 0.2360828548em;
 }
-.u-px-xsm {
+.test-xxsm {
   padding: 0 0.3819820591em 0 0.3819820591em;
 }
-.u-px-sm {
+.test-xsm {
   padding: 0 0.6180469716em 0 0.6180469716em;
 }
-.u-px-md {
+.test-xmd {
   padding: 0 1em 0 1em;
 }
-.u-px-lg {
+.test-xlg {
   padding: 0 1.618em 0 1.618em;
 }
-.u-px-xlg {
+.test-xxlg {
   padding: 0 2.617924em 0 2.617924em;
 }
-.u-px-xxlg {
+.test-xxxlg {
   padding: 0 4.235801032em 0 4.235801032em;
 }
-.u-py-xxsm {
+.test-yxxsm {
   padding: 0.2360828548em 0 0.2360828548em 0;
 }
-.u-py-xsm {
+.test-yxsm {
   padding: 0.3819820591em 0 0.3819820591em 0;
 }
-.u-py-sm {
+.test-ysm {
   padding: 0.6180469716em 0 0.6180469716em 0;
 }
-.u-py-md {
+.test-ymd {
   padding: 1em 0 1em 0;
 }
-.u-py-lg {
+.test-ylg {
   padding: 1.618em 0 1.618em 0;
 }
-.u-py-xlg {
+.test-yxlg {
   padding: 2.617924em 0 2.617924em 0;
 }
-.u-py-xxlg {
+.test-yxxlg {
   padding: 4.235801032em 0 4.235801032em 0;
 }
-.u-pt-xxsm {
+.test-txxsm {
   padding: 0.2360828548em 0 0 0;
 }
-.u-pt-xsm {
+.test-txsm {
   padding: 0.3819820591em 0 0 0;
 }
-.u-pt-sm {
+.test-tsm {
   padding: 0.6180469716em 0 0 0;
 }
-.u-pt-md {
+.test-tmd {
   padding: 1em 0 0 0;
 }
-.u-pt-lg {
+.test-tlg {
   padding: 1.618em 0 0 0;
 }
-.u-pt-xlg {
+.test-txlg {
   padding: 2.617924em 0 0 0;
 }
-.u-pt-xxlg {
+.test-txxlg {
   padding: 4.235801032em 0 0 0;
 }
-.u-pr-xxsm {
+.test-rxxsm {
   padding: 0 0.2360828548em 0 0;
 }
-.u-pr-xsm {
+.test-rxsm {
   padding: 0 0.3819820591em 0 0;
 }
-.u-pr-sm {
+.test-rsm {
   padding: 0 0.6180469716em 0 0;
 }
-.u-pr-md {
+.test-rmd {
   padding: 0 1em 0 0;
 }
-.u-pr-lg {
+.test-rlg {
   padding: 0 1.618em 0 0;
 }
-.u-pr-xlg {
+.test-rxlg {
   padding: 0 2.617924em 0 0;
 }
-.u-pr-xxlg {
+.test-rxxlg {
   padding: 0 4.235801032em 0 0;
 }
-.u-pb-xxsm {
+.test-bxxsm {
   padding: 0 0 0.2360828548em 0;
 }
-.u-pb-xsm {
+.test-bxsm {
   padding: 0 0 0.3819820591em 0;
 }
-.u-pb-sm {
+.test-bsm {
   padding: 0 0 0.6180469716em 0;
 }
-.u-pb-md {
+.test-bmd {
   padding: 0 0 1em 0;
 }
-.u-pb-lg {
+.test-blg {
   padding: 0 0 1.618em 0;
 }
-.u-pb-xlg {
+.test-bxlg {
   padding: 0 0 2.617924em 0;
 }
-.u-pb-xxlg {
+.test-bxxlg {
   padding: 0 0 4.235801032em 0;
 }
-.u-pl-xxsm {
+.test-lxxsm {
   padding: 0 0 0 0.2360828548em;
 }
-.u-pl-xsm {
+.test-lxsm {
   padding: 0 0 0 0.3819820591em;
 }
-.u-pl-sm {
+.test-lsm {
   padding: 0 0 0 0.6180469716em;
 }
-.u-pl-md {
+.test-lmd {
   padding: 0 0 0 1em;
 }
-.u-pl-lg {
+.test-llg {
   padding: 0 0 0 1.618em;
 }
-.u-pl-xlg {
+.test-lxlg {
   padding: 0 0 0 2.617924em;
 }
-.u-pl-xxlg {
+.test-lxxlg {
   padding: 0 0 0 4.235801032em;
 }
