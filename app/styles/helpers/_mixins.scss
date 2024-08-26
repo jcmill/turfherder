@@ -1,28 +1,15 @@
 @use 'sass:list';
 @use "sass:string";
+@use 'sass:map';
 @import 'maps';
 
-@mixin utilityBuild($map, $attribute, $seperator: '') {
-  @each $key, $value in $map {
-    &#{if($key != $map, #{$seperator}#{$key}, '')} {
-      @if type-of($value) == 'map' {
-        @each $att in $attribute {
-          @include utilityBuild($value, $att);
-        }
-      }
-      @else {
-        #{$attribute}: $value;
-      }
-    }
-  }
-}
 
 @mixin utilBuild($sizes, $axis, $attributes...) {
   @each $size, $var in $sizes {
     $i: index($sizes, $size);
     @each $axi in $axis {
       $i: index($axis, $axi);
-      &-#{$axi}-#{$size} { 
+      &#{$axi}-#{$size} { 
         @each $attribute in $attributes{
           #{$attribute}: $var;
         }
@@ -31,6 +18,21 @@
   }
 }
 
-@debug string.slice("Helvetica Neue", 1, 1);
-@debug string.insert("Roboto Bold", "$", 1);
-@debug map-get($posvalues, x, xxsm)
+
+@mixin utilityBuild($utility, $seperator: '-', $prefix: false) {
+  $utilityList: map-get($utilities, $utility);
+
+  $prefix: if($prefix == false, '.', '&');
+  
+  $utilityClass: map-get($utilityList, class);
+  $utilityProperties: map-get($utilityList, properties);
+  $utilityValues: map-get($utilityList, values);
+
+  @each $value, $modifier in $utilityValues {
+    #{$prefix}#{$utilityClass}#{$seperator}#{$modifier} { 
+        @each $property in $utilityProperties {
+        #{$property}: $value;
+      }
+    }
+  }
+}

@@ -1,13 +1,8 @@
 @use 'sass:map';
+@use 'sass:list';
 @import '../base/variables';
 
-$sep: "-"; // just for testinng
-
-$classValues: (xxsm xsm sm md lg xlg xxlg);
-$classAxis: (x y t r b l);
-
-
-$pvalues: (
+$values: (
   0: 0,
   xxsm: $xxsm,
   xsm: $xsm,
@@ -18,59 +13,64 @@ $pvalues: (
   xxlg: $xxlg,
 );
 
-$posvalues: (
-  x: (
-    xxsm: 0 $xxsm 0 $xxsm,
-    xsm: 0 $xsm 0 $xsm,
-    sm: 0 $sm 0 $sm,
-    md: 0 $md 0 $md,
-    lg: 0 $lg 0 $lg,
-    xlg: 0 $xlg 0 $xlg,
-    xxlg: 0 $xxlg 0 $xxlg,
-  ),
-  y: (
-    xxsm: $xxsm 0 $xxsm 0,
-    xsm: $xsm 0 $xsm 0,
-    sm: $sm 0 $sm 0,
-    md: $md 0 $md 0,
-    lg: $lg 0 $lg 0,
-    xlg: $xlg 0 $xlg 0,
-    xxlg: $xxlg 0 $xxlg 0,
-  ),
-  t: (
-    xxsm: $xxsm 0 0 0,
-    xsm: $xsm 0 0 0,
-    sm: $sm 0 0 0,
-    md: $md 0 0 0,
-    lg: $lg 0 0 0,
-    xlg: $xlg 0 0 0,
-    xxlg: $xxlg 0 0 0,
-  ),
-  r: (
-    xxsm: 0 $xxsm 0 0,
-    xsm: 0 $xsm 0 0,
-    sm: 0 $sm 0 0,
-    md: 0 $md 0 0,
-    lg: 0 $lg 0 0,
-    xlg: 0 $xlg 0 0,
-    xxlg: 0 $xxlg 0 0,
-  ),
-  b: (
-    xxsm: 0 0 $xxsm 0,
-    xsm: 0 0 $xsm 0,
-    sm: 0 0 $sm 0,
-    md: 0 0 $md 0,
-    lg: 0 0 $lg 0,
-    xlg: 0 0 $xlg 0,
-    xxlg: 0 0 $xxlg 0,
-  ),
-  l: (
-    xxsm: 0 0 0 $xxsm,
-    xsm: 0 0 0 $xsm,
-    sm: 0 0 0 $sm,
-    md: 0 0 0 $md,
-    lg: 0 0 0 $lg,
-    xlg: 0 0 0 $xlg,
-    xxlg: 0 0 0 $xxlg,
-  ),
+$pvalues: (
+  0: 0,
+  $xxsm: xxsm,
+  $xsm: xsm,
+  $sm: sm,
+  $md: md,
+  $lg: lg,
+  $xlg: xlg,
+  $xxlg: xxlg,
 );
+
+$pvalues2: (
+  0,
+  $xxsm,
+  $xsm,
+  $sm,
+  $md,
+  $lg,
+  $xlg,
+  $xxlg,
+);
+
+$classSizeModifiers: (xxsm xsm sm md lg xlg xxlg);
+
+$utilities: (
+    'padding-y': (
+      class: py,
+      properties: padding-top padding-bottom,
+      values: $pvalues
+    ),
+    'padding-x': (
+      class: px,
+      properties: padding-left padding-right,
+      values: $pvalues
+    ),
+    'padding-left': (
+      class: pl,
+      properties: padding-left,
+      values: $pvalues
+    )
+  );
+
+  $util: ();
+
+  $util: (
+      'padding-y': (
+        class: py,
+        properties: padding-top padding-bottom,
+        values: $pvalues
+      ),
+      'padding-x': (
+        class: px,
+        properties: padding-left padding-right,
+        values: $pvalues
+      ),
+      'padding-left': (
+        class: pl,
+        properties: padding-left,
+        values: $pvalues2
+      )
+  );

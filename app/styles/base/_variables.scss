@@ -35,3 +35,6 @@ $xxlg: $xlg * $root;
 // @debug "xlg size:" $xlg;
 // @debug "xxlg size:" $xxlg;
 
+$classSizeModifiers: (xxsm xsm sm md lg xlg xxlg);
+$sizeModifiers: ($xxsm $xsm $sm $md $lg $xlg $xxlg);
+$classAxis: (x y t r b l);
