@@ -21,10 +21,22 @@
   $utilityList: map-get($utilities, $utility);
 
   $prefix: if($prefix == false, '.', '&');
+
+  $seperator: if(map-has-key($utilityList, values), 
+                $seperator, 
+                '');
   
-  $utilityClass: map-get($utilityList, class);
-  $utilityProperties: map-get($utilityList, properties);
-  $utilityValues: map-get($utilityList, values);
+  $utilityClass: if(map-has-key($utilityList, class), 
+                  map-get($utilityList, class), 
+                  $utility);
+
+  $utilityProperties: if(map-has-key($utilityList, properties), 
+                        map-get($utilityList, properties), 
+                        $utility);
+
+  $utilityValues: if(map-has-key($utilityList, values), 
+                    map-get($utilityList, values), 
+                    $sizeModifiers);
 
   @each $value, $modifier in $utilityValues {
     #{$prefix}#{$utilityClass}#{$seperator}#{$modifier} { 

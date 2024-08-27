@@ -3,7 +3,7 @@
 @import '../base/variables';
 
 $classSizeModifiers: (xxsm xsm sm md lg xlg xxlg);
-$sizeModifiers: ($xxsm $xsm $sm $md $lg $xlg $xxlg);
+$sizeModifiers: (0 $xxsm $xsm $sm $md $lg $xlg $xxlg);
 $classAxis: (x y t r b l);
 
 $sizeValues: (
