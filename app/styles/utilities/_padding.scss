@@ -2,12 +2,12 @@
 @use '../base/variables';
 @import '../helpers/maps', '../helpers/mixins';
 
-// .u-p {
-//   @include utilBuild($values,'y', 'padding-top', 'padding-bottom'); 
-// }
+.u-p {
+  @include utilBuild($sizeValues,'y', 'padding-top', 'padding-bottom'); 
+}
 
 .i- {
   @include utilityBuild(padding-left, '-', true);
 }
 
-@include utilityBuild(padding-left, '-');
+@include utilityBuild(padding-y, '-');

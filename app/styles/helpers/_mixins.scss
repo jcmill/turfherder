@@ -5,10 +5,8 @@
 
 
 @mixin utilBuild($sizes, $axis, $attributes...) {
-  @each $size, $var in $sizes {
-    $i: index($sizes, $size);
+  @each $var, $size in $sizes {
     @each $axi in $axis {
-      $i: index($axis, $axi);
       &#{$axi}-#{$size} { 
         @each $attribute in $attributes{
           #{$attribute}: $var;

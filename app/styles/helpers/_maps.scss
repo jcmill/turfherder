@@ -2,18 +2,11 @@
 @use 'sass:list';
 @import '../base/variables';
 
-$values: (
-  0: 0,
-  xxsm: $xxsm,
-  xsm: $xsm,
-  sm: $sm,
-  md: $md,
-  lg: $lg,
-  xlg: $xlg,
-  xxlg: $xxlg,
-);
+$classSizeModifiers: (xxsm xsm sm md lg xlg xxlg);
+$sizeModifiers: ($xxsm $xsm $sm $md $lg $xlg $xxlg);
+$classAxis: (x y t r b l);
 
-$pvalues: (
+$sizeValues: (
   0: 0,
   $xxsm: xxsm,
   $xsm: xsm,
@@ -24,53 +17,20 @@ $pvalues: (
   $xxlg: xxlg,
 );
 
-$pvalues2: (
-  0,
-  $xxsm,
-  $xsm,
-  $sm,
-  $md,
-  $lg,
-  $xlg,
-  $xxlg,
-);
-
-$classSizeModifiers: (xxsm xsm sm md lg xlg xxlg);
-
 $utilities: (
     'padding-y': (
       class: py,
       properties: padding-top padding-bottom,
-      values: $pvalues
+      values: $sizeValues
     ),
     'padding-x': (
       class: px,
       properties: padding-left padding-right,
-      values: $pvalues
+      values: $sizeValues
     ),
     'padding-left': (
       class: pl,
       properties: padding-left,
-      values: $pvalues
+      values: $sizeValues
     )
-  );
-
-  $util: ();
-
-  $util: (
-      'padding-y': (
-        class: py,
-        properties: padding-top padding-bottom,
-        values: $pvalues
-      ),
-      'padding-x': (
-        class: px,
-        properties: padding-left padding-right,
-        values: $pvalues
-      ),
-      'padding-left': (
-        class: pl,
-        properties: padding-left,
-        values: $pvalues2
-      )
   );

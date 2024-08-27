@@ -50,6 +50,39 @@ input, button, textarea, select {
     scroll-behavior: auto !important;
   }
 }
+.u-py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.u-py-xxsm {
+  padding-top: 0.2360828548em;
+  padding-bottom: 0.2360828548em;
+}
+.u-py-xsm {
+  padding-top: 0.3819820591em;
+  padding-bottom: 0.3819820591em;
+}
+.u-py-sm {
+  padding-top: 0.6180469716em;
+  padding-bottom: 0.6180469716em;
+}
+.u-py-md {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.u-py-lg {
+  padding-top: 1.618em;
+  padding-bottom: 1.618em;
+}
+.u-py-xlg {
+  padding-top: 2.617924em;
+  padding-bottom: 2.617924em;
+}
+.u-py-xxlg {
+  padding-top: 4.235801032em;
+  padding-bottom: 4.235801032em;
+}
+
 .i-pl-0 {
   padding-left: 0;
 }
@@ -75,34 +108,42 @@ input, button, textarea, select {
   padding-left: 4.235801032em;
 }
 
-.pl-0 {
-  padding-left: 0;
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.pl-xxsm {
-  padding-left: 0.2360828548em;
+.py-xxsm {
+  padding-top: 0.2360828548em;
+  padding-bottom: 0.2360828548em;
 }
 
-.pl-xsm {
-  padding-left: 0.3819820591em;
+.py-xsm {
+  padding-top: 0.3819820591em;
+  padding-bottom: 0.3819820591em;
 }
 
-.pl-sm {
-  padding-left: 0.6180469716em;
+.py-sm {
+  padding-top: 0.6180469716em;
+  padding-bottom: 0.6180469716em;
 }
 
-.pl-md {
-  padding-left: 1em;
+.py-md {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-.pl-lg {
-  padding-left: 1.618em;
+.py-lg {
+  padding-top: 1.618em;
+  padding-bottom: 1.618em;
 }
 
-.pl-xlg {
-  padding-left: 2.617924em;
+.py-xlg {
+  padding-top: 2.617924em;
+  padding-bottom: 2.617924em;
 }
 
-.pl-xxlg {
-  padding-left: 4.235801032em;
+.py-xxlg {
+  padding-top: 4.235801032em;
+  padding-bottom: 4.235801032em;
 }
