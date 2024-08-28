@@ -1,6 +1,13 @@
+@use 'sass:color';
 @use 'sass:list';
 @use '../base/variables';
-@import '../helpers/maps', '../helpers/mixins';
+@import '../helpers/maps', '../helpers/mixins', '../helpers/color';
+
+$base-color: hsl(217, 67%, 48%);
+
+.test {
+  color: color($base-color, 20%);
+}
 
 .u-p {
   @include utilBuild($sizeValues,'y', 'padding-top', 'padding-bottom'); 
@@ -11,3 +18,5 @@
 }
 
 @include utilityBuild(padding-y, '-');
+
+@debug darken(#036, 10%);

@@ -50,6 +50,10 @@ input, button, textarea, select {
     scroll-behavior: auto !important;
   }
 }
+.test {
+  color: #1062e5;
+}
+
 .u-py-0 {
   padding-top: 0;
   padding-bottom: 0;
