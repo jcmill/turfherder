@@ -38,7 +38,7 @@
     $diff: 100 - $colorSat;
 
     @if ($value >= 0) {
-        $adjustedValue: $value + 2;
+        $adjustedValue: $value + 3;
 
         // Sum of consecutive numbers based on the value used to change the base color
         $newSat: 0 - percentage(calc(($value + math.div($value, 2) * (1 + $value)) / 100));
@@ -46,7 +46,7 @@
         // 
         $asymptote: calc($diff * (1 / abs($adjustedValue)));
         $unitlessAsy: math.div($asymptote, ($asymptote * 0 + 1));
-        $newLum: percentage(calc(($unitlessAsy + math.div($unitlessAsy, 2) * (1 + $unitlessAsy)) / 100) / 10);
+        $newLum: percentage($value * (calc(($unitlessAsy + math.div($unitlessAsy, 2) * (1 + $unitlessAsy)) / 100)) / 10);
 
         // $newColor: color.adjust($color, $saturation: $newSat, $lightness: $newLum);
 
