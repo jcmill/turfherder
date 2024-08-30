@@ -1,1 +1,24 @@
-// this can act as a storage for colors, using scss to help speed things up.
+@use 'variables';
+@import '../helpers/maps';
+
+$base-color: #2867cc;
+
+$colorScale: 6;
+
+$colors: (
+    'a': (
+      value: #2867cc,
+      name: 'blue',
+      scale: $colorScale
+    ),
+    'b': (
+      value: #d32929,
+      name: 'red',
+      scale: $colorScale
+    ),
+    'c': (
+      value: #a4cc29,
+      name: 'yellow',
+      scale: $colorScale
+    )
+  );

@@ -3,8 +3,6 @@
 @use '../base/variables';
 @import '../helpers/maps', '../helpers/mixins', '../helpers/color';
 
-$base-color: hsl(217, 67%, 48%);
-
 .test {
   color: $base-color;
 }
@@ -18,52 +16,3 @@ $base-color: hsl(217, 67%, 48%);
 }
 
 @include utilityBuild(padding-y, '-');
-
-
-@debug color.saturation($base-color);
-@debug color.adjust(#2867cc, $saturation: -3%, $lightness: 3%);
-
-.color {
-  height: 5em;
-  width: 5em;
-}
-
-.test2 {
-  color: color($base-color, 1);
-}
-.color50 {
-  background: color($base-color, 5);
-}
-.color100 {
-  background: color($base-color, 4);
-}
-.color200 {
-  background: color($base-color, 3);
-}
-.color300 {
-  background: color($base-color, 2);
-}
-.color400 {
-  background: color($base-color, 1);
-}
-.color500 {
-  background: color($base-color);
-}
-.color600 {
-  background: color($base-color, -1);
-}
-.color700 {
-  background: color($base-color, -2);
-}
-.color800 {
-  background: color($base-color, -3);
-}
-.color900 {
-  background: color($base-color, -4);
-}
-.color1000 {
-  background: color($base-color, -5);
-}
-// .color500 {
-//   background: color.adjust(#2867cc, $saturation: 0%, $lightness: 0%);
-// }

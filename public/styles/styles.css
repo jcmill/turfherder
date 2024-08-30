@@ -51,7 +51,7 @@ input, button, textarea, select {
   }
 }
 .test {
-  color: hsl(217, 67%, 48%);
+  color: #2867cc;
 }
 
 .u-py-0 {
@@ -152,29 +152,29 @@ input, button, textarea, select {
   padding-bottom: 4.235801032em;
 }
 
-.color {
-  height: 5em;
-  width: 5em;
+.color__wrapper {
+  display: flex;
 }
 
-.test2 {
-  color: #3d78d6;
+.color {
+  height: 8em;
+  width: 8em;
 }
 
 .color50 {
-  background: #adc1e1;
+  background: #acc0e1;
 }
 
 .color100 {
-  background: #92afdd;
+  background: #91aedd;
 }
 
 .color200 {
-  background: #769ddb;
+  background: #759cdb;
 }
 
 .color300 {
-  background: #5a8ad8;
+  background: #598ad8;
 }
 
 .color400 {
@@ -182,7 +182,7 @@ input, button, textarea, select {
 }
 
 .color500 {
-  background: hsl(217, 67%, 48%);
+  background: #2867cc;
 }
 
 .color600 {
@@ -190,17 +190,17 @@ input, button, textarea, select {
 }
 
 .color700 {
-  background: #1a4c9e;
+  background: #194c9d;
 }
 
 .color800 {
-  background: #123f87;
+  background: #123f86;
 }
 
 .color900 {
-  background: #0c326f;
+  background: #0b316e;
 }
 
 .color1000 {
-  background: #062556;
+  background: #062455;
 }

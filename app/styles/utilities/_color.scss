@@ -1,0 +1,42 @@
+@use '../base/colors';
+
+.color__wrapper {
+  display: flex;
+}
+.color {
+  height: 8em;
+  width: 8em;
+}
+.color50 {
+  background: color($base-color, 5);
+}
+.color100 {
+  background: color($base-color, 4);
+}
+.color200 {
+  background: color($base-color, 3);
+}
+.color300 {
+  background: color($base-color, 2);
+}
+.color400 {
+  background: color($base-color, 1);
+}
+.color500 {
+  background: color($base-color);
+}
+.color600 {
+  background: color($base-color, -1);
+}
+.color700 {
+  background: color($base-color, -2);
+}
+.color800 {
+  background: color($base-color, -3);
+}
+.color900 {
+  background: color($base-color, -4);
+}
+.color1000 {
+  background: color($base-color, -5);
+}
