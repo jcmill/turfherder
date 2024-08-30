@@ -9,10 +9,6 @@ $base-color: hsl(217, 67%, 48%);
   color: $base-color;
 }
 
-.test2 {
-  color: color($base-color, 1);
-}
-
 .u-p {
   @include utilBuild($sizeValues,'y', 'padding-top', 'padding-bottom'); 
 }
@@ -32,25 +28,27 @@ $base-color: hsl(217, 67%, 48%);
   width: 5em;
 }
 
-
+.test2 {
+  color: color($base-color, 1);
+}
 .color100 {
-  background: color.adjust(#2867cc, $saturation: -20%, $lightness: 33.89%);
+  background: color($base-color, 4);
   // background: color.adjust(#2867cc, $saturation: -20%, $lightness: 33.89%);
 }
 .color200 {
-  background: color.adjust(#2867cc, $saturation: -14%, $lightness: 23.25%);
+  background: color($base-color, 3);
   // background: color.adjust(#2867cc, $saturation: -14%, $lightness: 23.25%);
 }
 .color300 {
-  background: color.adjust(#2867cc, $saturation: -9%, $lightness: 15.6%);
+  background: color($base-color, 2);
   // background: color.adjust(#2867cc, $saturation: -9%, $lightness: 15.6%);
 }
 .color400 {
-  background: #3f77d2;
+  background: color($base-color, 1);
   // background: color.adjust(#2867cc, $saturation: -5%, $lightness: 9.478%);
 }
 .color450 {
-  background: #407ad6;
+  background: #477fd8;
 }
 .color500 {
   background: color.adjust(#2867cc, $saturation: 0%, $lightness: 0%);
