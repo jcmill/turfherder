@@ -1,7 +1,86 @@
 @use 'sass:color';
+@use 'sass:math';
 
-@function color($color, $sat) {
+@function colorTest($color, $sat) {
   $changed: change-color($color, 
               $saturation: saturation($color) + $sat);
   @return $changed;
 }
+
+@function diff($colorSat, $colorLum) {
+  @if ($colorSat >= $colorLum and $colorSat < 100) {
+    $diff: 100 - $colorSat;
+    @return $diff;
+  } @else if ($colorLum >= $colorSat and $colorLum < 100) {
+    $diff: 100 - $colorSat;
+    @return $diff;
+  } @else {
+    $diff: 0;
+    @return $diff;
+  }
+}
+
+@function color($color, $value: 0) {
+  $colorHue: hue($color);
+  $colorSat: saturation($color);
+  $colorLum: lightness($color);
+
+  // @return $colorHue, $colorSat, $colorLum;
+
+  // take the difference between the greater value and 100. If the differ
+  @if ($value == 0 or $value == null) {
+
+    @return $color;
+
+  } @else if ($colorSat >= $colorLum and $colorSat < 100) {
+
+    // difference between the colors saturation and 100
+    $diff: 100 - $colorSat;
+
+    @if ($value >= 0) {
+        $adjustedValue: $value + 2;
+
+        // Sum of consecutive numbers based on the value used to change the base color
+        $newSat: 0 - percentage(calc(($value + math.div($value, 2) * (1 + $value)) / 100));
+
+        // 
+        $asymptote: calc($diff * (1 / abs($adjustedValue)));
+        $unitlessAsy: math.div($asymptote, ($asymptote * 0 + 1));
+        $newLum: percentage(calc(($unitlessAsy + math.div($unitlessAsy, 2) * (1 + $unitlessAsy)) / 100) / 10);
+
+        // $newColor: color.adjust($color, $saturation: $newSat, $lightness: $newLum);
+
+        @return $asymptote, $newLum;
+        // @return color.adjust($color, $saturation: $newSat, $lightness: $newLum);
+
+        // @return $colorSat, $newSat, $colorLum, $newLum, $value, $diff;
+      
+      } @else if ($value <= 0) {
+        $value: $value - 2;
+        $newSat: $colorSat + abs($value);
+        $newLum: $colorLum - div($diff * 1, abs($value));
+        // @return adjust($color, $colorSat, $colorLum);
+      }
+    // @return $diff;
+  } @else if ($colorLum >= $colorSat and $colorLum < 100) {
+    $diff: 100 - $colorLum;
+    @return $diff;
+  } @else {
+    $diff: 0;
+    @return $diff;
+  }
+}
+
+//logarithmic function used to calculate increasing and decreasing amounts based on the $diff and input value when the value is greater than 2 ( y = 1/|x|)
+// @if ($value >= 0) {
+//   $value: $value + 2;
+//   $newSat: $colorSat - $value;
+//   $newLum: $colorSat + ($diff * 1/abs($value));
+//   // @return $newSat;
+
+// } @else if ($value <= 0) {
+//   $value: $value - 2;
+//   $newSat: $colorSat + abs($value);
+//   $newLum: $colorSat - ($diff * 1/abs($value));
+//   @return $newSat + $newSat;
+// }

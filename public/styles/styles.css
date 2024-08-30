@@ -51,7 +51,11 @@ input, button, textarea, select {
   }
 }
 .test {
-  color: #1062e5;
+  color: hsl(217, 67%, 48%);
+}
+
+.test2 {
+  color: 11%, 7.7%;
 }
 
 .u-py-0 {
@@ -150,4 +154,33 @@ input, button, textarea, select {
 .py-xxlg {
   padding-top: 4.235801032em;
   padding-bottom: 4.235801032em;
+}
+
+.color {
+  height: 5em;
+  width: 5em;
+}
+
+.color100 {
+  background: #bacbe6;
+}
+
+.color200 {
+  background: #8eacdd;
+}
+
+.color300 {
+  background: #6c95d8;
+}
+
+.color400 {
+  background: #3f77d2;
+}
+
+.color450 {
+  background: #407ad6;
+}
+
+.color500 {
+  background: #2867cc;
 }
