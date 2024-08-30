@@ -31,25 +31,39 @@ $base-color: hsl(217, 67%, 48%);
 .test2 {
   color: color($base-color, 1);
 }
+.color50 {
+  background: color($base-color, 5);
+}
 .color100 {
   background: color($base-color, 4);
-  // background: color.adjust(#2867cc, $saturation: -20%, $lightness: 33.89%);
 }
 .color200 {
   background: color($base-color, 3);
-  // background: color.adjust(#2867cc, $saturation: -14%, $lightness: 23.25%);
 }
 .color300 {
   background: color($base-color, 2);
-  // background: color.adjust(#2867cc, $saturation: -9%, $lightness: 15.6%);
 }
 .color400 {
   background: color($base-color, 1);
-  // background: color.adjust(#2867cc, $saturation: -5%, $lightness: 9.478%);
-}
-.color450 {
-  background: #477fd8;
 }
 .color500 {
-  background: color.adjust(#2867cc, $saturation: 0%, $lightness: 0%);
+  background: color($base-color);
 }
+.color600 {
+  background: color($base-color, -1);
+}
+.color700 {
+  background: color($base-color, -2);
+}
+.color800 {
+  background: color($base-color, -3);
+}
+.color900 {
+  background: color($base-color, -4);
+}
+.color1000 {
+  background: color($base-color, -5);
+}
+// .color500 {
+//   background: color.adjust(#2867cc, $saturation: 0%, $lightness: 0%);
+// }
