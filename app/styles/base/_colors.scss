@@ -3,21 +3,26 @@
 
 $base-color: #2867cc;
 
-$colorScale: 6;
+$colorScale: 1;
 
 $colors: (
     'a': (
-      value: #2867cc,
+      value: #5375EE,
       name: 'blue',
       scale: $colorScale
     ),
     'b': (
-      value: #d32929,
+      value: #576CB7,
       name: 'red',
       scale: $colorScale
     ),
     'c': (
-      value: #6e821c,
+      value: #3C4D67,
+      name: 'yellow',
+      scale: $colorScale
+    ),
+    'd': (
+      value: #283571,
       name: 'yellow',
       scale: $colorScale
     )

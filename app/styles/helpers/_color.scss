@@ -21,80 +21,88 @@
   }
 }
 
-// @debug map-get($colors, value, value);
-
 @function colorTest($color, $value) {
   $baseColor: map-get($colors, $color, value);
-  // @debug $baseColor;
   @return $baseColor;
 }
 
-@function color($color, $inc: 0, $colorScale: 6) {
+@function color($color, $scale: 0, $colorScale: 3) {
 
-  $baseColor: map-get($colors, $color, value);
+  $baseColor: if(map-has-key($colors, $color, value), 
+                  map-get($colors, $color, value), 
+                  $color);
+
+  $colorScale: if(map-has-key($colors, $color, scale), 
+                  map-get($colors, $color, scale), 
+                  $colorScale);
 
   $colorSat: saturation($baseColor);
   $colorLum: lightness($baseColor);
 
-  // @return $baseColor, $colorSat, $colorLum;
+  $diff: 1%; // initiate a percentage for none mapped colors
 
   // take the difference between the greater value and 100. If the differ
-  @if ($inc == 0 or $inc == null) {
+  @if ($scale == 0 or $scale == '') {
 
     @return $baseColor;
 
-  } @else if ($colorSat >= $colorLum and $colorSat < 100) {
+  } @else if (($colorSat >= $colorLum and ($colorSat > 50 and $colorSat < 100))) {
 
     // difference between the colors saturation and 100
-    $diff: 100 - $colorSat;
+    $diff: 100% - $colorSat;
 
-    @if ($inc > 0) {
+  } @else if (($colorLum >= $colorSat and ($colorLum > 50 and $colorLum < 100))) {
+
+    // difference between the colors luminance and 100
+    $diff: 100% - $colorLum;
+
+  } 
+  @else if (($colorSat <= $colorLum and ($colorSat < 50 and $colorSat > 0))) {
+
+    $diff: $colorSat;
+
+  } @else if (($colorLum <= $colorSat and ($colorLum < 50 and $colorLum > 0))) {
+
+    $diff: $colorLum;
+  }
+
+    @if ($scale > 0) {
         $adjustedValue: math.div(stripUnit($diff), $colorScale);
 
-        // Sum of consecutive numbers based on the value used to change the base color
-        $newSat: 0 - percentage(calc(($inc + math.div($inc, 2) * (1 + $inc)) / 100));
+        // Sum of consecutive numbers based on the scale used to change the base color
+        $newSat: 0 - percentage(calc(($scale + math.div($scale, 2) * (1 + $scale)) / 100));
 
-        $newLum: calc($diff * (1 / abs($adjustedValue)));
+        $newLum: calc($diff * (2 / abs($adjustedValue)));
 
         $i: 1;
-        @while $i < $inc {
+        @while $i < $scale {
+          $newLum: $newLum + $i + math.div($scale, 10) + calc($diff * (2 / abs($adjustedValue)));
           $i: $i + 1;
-          $newLum: $newLum + calc($diff * (1 / abs($adjustedValue)));
         }
 
-        // @return $newSat, $newLum, $diff, $adjustedValue;
+
         @return color.adjust($baseColor, $saturation: $newSat, $lightness: $newLum);
       
 
       // when value is neg
-      } @else if ($inc < 0) {
+      } @else if ($scale < 0) {
 
         $adjustedValue: math.div(stripUnit($diff), $colorScale);
 
         // Sum of consecutive numbers based on the value used to change the base color
-        $newSat: percentage(calc((abs($inc) + math.div(abs($inc), 2) * (1 + abs($inc))) / 100));
+        $newSat: percentage(calc((abs($scale) + math.div(abs($scale), 2) * (1 + abs($scale))) / 100));
 
-        $newLum: calc($diff * (1 / abs($adjustedValue)));
+        $newLum: calc($diff * (2 / abs($adjustedValue)));
 
         $i: -1;
-        @while $i > $inc {
+        @while $i > $scale {
+          $newLum: $newLum - $i - math.div($scale, 10) + calc($diff * (2 / abs($adjustedValue)));
           $i: $i - 1;
-          $newLum: $newLum + calc($diff * (1 / abs($adjustedValue)));
         }
-
+      
         $newLum: 0 - $newLum;
 
         // @return $newSat, $newLum, $diff, $adjustedValue;
         @return color.adjust($baseColor, $saturation: $newSat, $lightness: $newLum);
       }
-
-    } @else if ($colorLum >= $colorSat and $colorLum < 100) {
-      $diff: 100 - $colorLum;
-
-      
-
-    } @else {
-      $diff: 0;
-      @return $diff;
-    }
 }

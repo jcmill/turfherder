@@ -4,7 +4,7 @@
   // if value has a unit, strip it
   @if math.is-unitless($value) == false {
     @return math.div($value, ($value * 0 + 1)); // math that changes a value in the divisor to a unitless 1 and divides the dividend vaule.
-  } @else {
+  } @else if (math.is-unitless($value) == true) {
     // else return value
     @return $value;
   }

@@ -1,5 +1,5 @@
 @use '../base/colors';
-// @use '../helpers/functions';
+@use '../helpers/functions';
 
 // @debug map-get($colors, a, value);
 
@@ -11,35 +11,35 @@
   width: 8em;
 }
 .color50 {
-  background: color(c, 5);
+  background: color(b, 5);
 }
 .color100 {
-  background: color(c, 4);
+  background: color(b, 4);
 }
 .color200 {
-  background: color(c, 3);
+  background: color(b, 3);
 }
 .color300 {
-  background: color(c, 2);
+  background: color(b, 2);
 }
 .color400 {
-  background: color(c, 1);
+  background: color(b, 1);
 }
 .color500 {
-  background: color(c);
+  background: color(b);
 }
 .color600 {
-  background: color(c, -1);
+  background: color(b, -1);
 }
 .color700 {
-  background: color(c, -2);
+  background: color(b, -2);
 }
 .color800 {
-  background: color(c, -3);
+  background: color(b, -3);
 }
 .color900 {
-  background: color(c, -4);
+  background: color(b,   -4);
 }
 .color1000 {
-  background: color(c, -5);
+  background: color(b, -5);
 }
