@@ -1,4 +1,7 @@
 @use '../base/colors';
+// @use '../helpers/functions';
+
+// @debug map-get($colors, a, value);
 
 .color__wrapper {
   display: flex;
@@ -8,35 +11,35 @@
   width: 8em;
 }
 .color50 {
-  background: color($base-color, 5);
+  background: color(c, 5);
 }
 .color100 {
-  background: color($base-color, 4);
+  background: color(c, 4);
 }
 .color200 {
-  background: color($base-color, 3);
+  background: color(c, 3);
 }
 .color300 {
-  background: color($base-color, 2);
+  background: color(c, 2);
 }
 .color400 {
-  background: color($base-color, 1);
+  background: color(c, 1);
 }
 .color500 {
-  background: color($base-color);
+  background: color(c);
 }
 .color600 {
-  background: color($base-color, -1);
+  background: color(c, -1);
 }
 .color700 {
-  background: color($base-color, -2);
+  background: color(c, -2);
 }
 .color800 {
-  background: color($base-color, -3);
+  background: color(c, -3);
 }
 .color900 {
-  background: color($base-color, -4);
+  background: color(c, -4);
 }
 .color1000 {
-  background: color($base-color, -5);
+  background: color(c, -5);
 }

@@ -50,10 +50,6 @@ input, button, textarea, select {
     scroll-behavior: auto !important;
   }
 }
-.test {
-  color: #2867cc;
-}
-
 .u-py-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -162,45 +158,45 @@ input, button, textarea, select {
 }
 
 .color50 {
-  background: #acc0e1;
+  background: #b6c86f;
 }
 
 .color100 {
-  background: #91aedd;
+  background: #afc652;
 }
 
 .color200 {
-  background: #759cdb;
+  background: #a7c238;
 }
 
 .color300 {
-  background: #598ad8;
+  background: #95af2c;
 }
 
 .color400 {
-  background: #3d78d6;
+  background: #829923;
 }
 
 .color500 {
-  background: #2867cc;
+  background: #6e821c;
 }
 
 .color600 {
-  background: #215ab5;
+  background: #596a15;
 }
 
 .color700 {
-  background: #194c9d;
+  background: #45520f;
 }
 
 .color800 {
-  background: #123f86;
+  background: #303909;
 }
 
 .color900 {
-  background: #0b316e;
+  background: #1a2004;
 }
 
 .color1000 {
-  background: #062455;
+  background: #040500;
 }

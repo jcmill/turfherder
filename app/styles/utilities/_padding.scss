@@ -3,10 +3,6 @@
 @use '../base/variables';
 @import '../helpers/maps', '../helpers/mixins', '../helpers/color';
 
-.test {
-  color: $base-color;
-}
-
 .u-p {
   @include utilBuild($sizeValues,'y', 'padding-top', 'padding-bottom'); 
 }
