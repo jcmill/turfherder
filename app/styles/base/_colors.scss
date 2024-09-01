@@ -3,7 +3,7 @@
 
 $base-color: #2867cc;
 
-$colorScale: 1;
+$colorScale: 3;
 
 $colors: (
     'a': (
@@ -23,6 +23,21 @@ $colors: (
     ),
     'd': (
       value: #283571,
+      name: 'yellow',
+      scale: $colorScale
+    ),
+    'e': (
+      value: #ff0000,
+      name: 'yellow',
+      scale: $colorScale
+    ),
+    'f': (
+      value: #0c8484,
+      name: 'grreen',
+      scale: $colorScale
+    ),
+    'g': (
+      value: #0000ff,
       name: 'yellow',
       scale: $colorScale
     )

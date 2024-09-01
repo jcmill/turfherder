@@ -153,50 +153,94 @@ input, button, textarea, select {
 }
 
 .color {
-  height: 8em;
-  width: 8em;
+  height: 10vw;
+  width: 10vw;
 }
 
 .color50 {
-  background: #b2b8cc;
+  background: #67ffff;
 }
 
 .color100 {
-  background: #99a2c3;
+  background: #30ffff;
 }
 
 .color200 {
-  background: #828fbd;
+  background: #02fcfc;
 }
 
 .color300 {
-  background: #6f7fba;
+  background: #08cbcb;
 }
 
 .color400 {
-  background: #6074b8;
+  background: #0ba4a4;
 }
 
 .color500 {
-  background: #576CB7;
+  background: #0c8484;
 }
 
 .color600 {
-  background: #4d64b6;
+  background: #0c7171;
 }
 
 .color700 {
-  background: #435bb1;
+  background: #076060;
 }
 
 .color800 {
-  background: #3850a5;
+  background: #034848;
 }
 
 .color900 {
-  background: #2c4394;
+  background: #002929;
 }
 
 .color1000 {
-  background: #20347e;
+  background: #000101;
+}
+
+.color1 {
+  background: #b0badd;
+}
+
+.color2 {
+  background: #9eaad6;
+}
+
+.color3 {
+  background: #8d9bce;
+}
+
+.color4 {
+  background: #7b8bc6;
+}
+
+.color5 {
+  background: #697cbf;
+}
+
+.color6 {
+  background: #576CB7;
+}
+
+.color7 {
+  background: #495fab;
+}
+
+.color8 {
+  background: #425599;
+}
+
+.color9 {
+  background: #3a4b87;
+}
+
+.color10 {
+  background: #324176;
+}
+
+.color11 {
+  background: #2b3764;
 }

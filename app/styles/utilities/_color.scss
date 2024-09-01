@@ -7,39 +7,73 @@
   display: flex;
 }
 .color {
-  height: 8em;
-  width: 8em;
+  height: 10vw;
+  width: 10vw;
 }
 .color50 {
-  background: color(b, 5);
+  background: color(f, 5);
 }
 .color100 {
-  background: color(b, 4);
+  background: color(f, 4);
 }
 .color200 {
-  background: color(b, 3);
+  background: color(f, 3);
 }
 .color300 {
-  background: color(b, 2);
+  background: color(f, 2);
 }
 .color400 {
-  background: color(b, 1);
+  background: color(f, 1);
 }
 .color500 {
-  background: color(b);
+  background: color(f, 0);
 }
 .color600 {
-  background: color(b, -1);
+  background: color(f, -1);
 }
 .color700 {
-  background: color(b, -2);
+  background: color(f, -2);
 }
 .color800 {
-  background: color(b, -3);
+  background: color(f, -3);
 }
 .color900 {
-  background: color(b,   -4);
+  background: color(f, -4);
 }
 .color1000 {
-  background: color(b, -5);
+  background: color(f, -5);
+}
+
+.color1 {
+  background: lighten(#576CB7, 25);
+}
+.color2 {
+  background: lighten(#576CB7, 20);
+}
+.color3 {
+  background: lighten(#576CB7, 15);
+}
+.color4 {
+  background: lighten(#576CB7, 10);
+}
+.color5 {
+  background: lighten(#576CB7, 5);
+}
+.color6 {
+  background: #576CB7;
+}
+.color7 {
+  background: darken(#576CB7, 5);
+}
+.color8 {
+  background: darken(#576CB7, 10);
+}
+.color9 {
+  background: darken(#576CB7, 15);
+}
+.color10 {
+  background: darken(#576CB7, 20);
+}
+.color11 {
+  background: darken(#576CB7, 25);
 }

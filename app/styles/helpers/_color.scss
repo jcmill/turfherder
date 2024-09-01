@@ -39,6 +39,8 @@
   $colorSat: saturation($baseColor);
   $colorLum: lightness($baseColor);
 
+  // @debug $colorSat, $colorLum;
+
   $diff: 1%; // initiate a percentage for none mapped colors
 
   // take the difference between the greater value and 100. If the differ
@@ -70,7 +72,8 @@
         $adjustedValue: math.div(stripUnit($diff), $colorScale);
 
         // Sum of consecutive numbers based on the scale used to change the base color
-        $newSat: 0 - percentage(calc(($scale + math.div($scale, 2) * (1 + $scale)) / 100));
+        $newSat: percentage(calc((abs($scale) + math.div(abs($scale), 2) * (5 + abs($scale))) / 100));
+        /////// The 10 in (10 + abs($scale)), can be adjusted ot alter the curve.
 
         $newLum: calc($diff * (2 / abs($adjustedValue)));
 
@@ -80,6 +83,8 @@
           $i: $i + 1;
         }
 
+        // @debug 'Sat: ' $newSat;
+        // @debug 'Lum: '$newLum;
 
         @return color.adjust($baseColor, $saturation: $newSat, $lightness: $newLum);
       
@@ -90,19 +95,27 @@
         $adjustedValue: math.div(stripUnit($diff), $colorScale);
 
         // Sum of consecutive numbers based on the value used to change the base color
-        $newSat: percentage(calc((abs($scale) + math.div(abs($scale), 2) * (1 + abs($scale))) / 100));
+        $newSat: percentage(calc((math.div(abs($scale), 1.5) * (5 + abs($scale))) / 100));
 
-        $newLum: calc($diff * (2 / abs($adjustedValue)));
+        // $newSat: percentage(calc((abs($scale) + math.div(abs($scale), 2) * (5 + abs($scale))) / 100));
 
-        $i: -1;
+
+        $newLum: 1 + calc((math.div($diff, 5) * (1 / abs($adjustedValue))));
+
+        $i: 0;
         @while $i > $scale {
-          $newLum: $newLum - $i - math.div($scale, 10) + calc($diff * (2 / abs($adjustedValue)));
+          $newLum: math.div($newLum, 1) - $i - math.div($scale, 10) + calc($diff * (1 / abs($adjustedValue)));
           $i: $i - 1;
         }
       
-        $newLum: 0 - $newLum;
+        $newSat: -7 + math.abs($newSat);
+        $newLum: 1 - $newLum;
+
+        @debug 'Sat: ' $newSat;
+        @debug 'Lum: '$newLum;
 
         // @return $newSat, $newLum, $diff, $adjustedValue;
         @return color.adjust($baseColor, $saturation: $newSat, $lightness: $newLum);
+        
       }
 }
