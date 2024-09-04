@@ -1,6 +1,7 @@
+@use 'sass:color';
 @use 'sass:list';
 @use '../base/variables';
-@import '../helpers/maps', '../helpers/mixins';
+@import '../helpers/maps', '../helpers/mixins', '../helpers/color';
 
 .u-p {
   @include utilBuild($sizeValues,'y', 'padding-top', 'padding-bottom'); 

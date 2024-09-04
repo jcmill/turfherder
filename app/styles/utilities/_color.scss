@@ -1,0 +1,95 @@
+@use '../base/colors';
+@use '../helpers/functions';
+
+// @debug map-get($colors, a, value);
+
+.color__wrapper {
+  display: flex;
+}
+.color {
+  height: 10vw;
+  width: 10vw;
+}
+
+$mappedColor: g;
+$testColor: #2957cc;
+
+.color100 {
+  background: color($mappedColor, 7);
+}
+.color200 {
+  background: color($mappedColor, 6);
+}
+.color300 {
+  background: color($mappedColor, 5);
+}
+.color400 {
+  background: color($mappedColor, 4);
+}
+.color500 {
+  background: color($mappedColor, 3);
+}
+.color600 {
+  background: color($mappedColor, 2);
+}
+.color700 {
+  background: color($mappedColor, 1);
+}
+.color800 {
+  background: color($mappedColor);
+}
+.color900 {
+  background: color($mappedColor, -1);
+}
+.color1000 {
+  background: color($mappedColor, -2);
+}
+.color1100 {
+  background: color($mappedColor, -3);
+}
+.color1200 {
+  background: color($mappedColor, -4);
+}
+.color1300 {
+  background: color($mappedColor, -5);
+}
+.color1400 {
+  background: color($mappedColor, -6);
+}
+.color1500 {
+  background: color($mappedColor, -7);
+}
+
+.color1 {
+  background: lighten($testColor, 25);
+}
+.color2 {
+  background: lighten($testColor, 20);
+}
+.color3 {
+  background: lighten($testColor, 15);
+}
+.color4 {
+  background: lighten($testColor, 10);
+}
+.color5 {
+  background: lighten($testColor, 5);
+}
+.color6 {
+  background: $testColor;
+}
+.color7 {
+  background: darken($testColor, 5);
+}
+.color8 {
+  background: darken($testColor, 10);
+}
+.color9 {
+  background: darken($testColor, 15);
+}
+.color10 {
+  background: darken($testColor, 20);
+}
+.color11 {
+  background: darken($testColor, 25);
+}

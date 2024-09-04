@@ -147,3 +147,116 @@ input, button, textarea, select {
   padding-top: 4.235801032em;
   padding-bottom: 4.235801032em;
 }
+
+.color__wrapper {
+  display: flex;
+}
+
+.color {
+  height: 10vw;
+  width: 10vw;
+}
+
+.color100 {
+  background: #e2eaff;
+}
+
+.color200 {
+  background: #b0c6fd;
+}
+
+.color300 {
+  background: #87a7f7;
+}
+
+.color400 {
+  background: #678df0;
+}
+
+.color500 {
+  background: #4d79e8;
+}
+
+.color600 {
+  background: #3968e0;
+}
+
+.color700 {
+  background: #0000ff;
+}
+
+.color800 {
+  background: #2957cc;
+}
+
+.color900 {
+  background: #000099;
+}
+
+.color1000 {
+  background: #1a48be;
+}
+
+.color1100 {
+  background: #113fb2;
+}
+
+.color1200 {
+  background: #0833a1;
+}
+
+.color1300 {
+  background: #002788;
+}
+
+.color1400 {
+  background: #001c62;
+}
+
+.color1500 {
+  background: #000f35;
+}
+
+.color1 {
+  background: #8da6e8;
+}
+
+.color2 {
+  background: #7796e4;
+}
+
+.color3 {
+  background: #6285df;
+}
+
+.color4 {
+  background: #4d75db;
+}
+
+.color5 {
+  background: #3865d7;
+}
+
+.color6 {
+  background: #2957cc;
+}
+
+.color7 {
+  background: #254eb7;
+}
+
+.color8 {
+  background: #2045a2;
+}
+
+.color9 {
+  background: #1c3c8c;
+}
+
+.color10 {
+  background: #183377;
+}
+
+.color11 {
+  background: #142a62;
+}
