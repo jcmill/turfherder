@@ -10,70 +10,86 @@
   height: 10vw;
   width: 10vw;
 }
-.color50 {
-  background: color(f, 5);
-}
+
+$mappedColor: g;
+$testColor: #2957cc;
+
 .color100 {
-  background: color(f, 4);
+  background: color($mappedColor, 7);
 }
 .color200 {
-  background: color(f, 3);
+  background: color($mappedColor, 6);
 }
 .color300 {
-  background: color(f, 2);
+  background: color($mappedColor, 5);
 }
 .color400 {
-  background: color(f, 1);
+  background: color($mappedColor, 4);
 }
 .color500 {
-  background: color(f, 0);
+  background: color($mappedColor, 3);
 }
 .color600 {
-  background: color(f, -1);
+  background: color($mappedColor, 2);
 }
 .color700 {
-  background: color(f, -2);
+  background: color($mappedColor, 1);
 }
 .color800 {
-  background: color(f, -3);
+  background: color($mappedColor);
 }
 .color900 {
-  background: color(f, -4);
+  background: color($mappedColor, -1);
 }
 .color1000 {
-  background: color(f, -5);
+  background: color($mappedColor, -2);
+}
+.color1100 {
+  background: color($mappedColor, -3);
+}
+.color1200 {
+  background: color($mappedColor, -4);
+}
+.color1300 {
+  background: color($mappedColor, -5);
+}
+.color1400 {
+  background: color($mappedColor, -6);
+}
+.color1500 {
+  background: color($mappedColor, -7);
 }
 
 .color1 {
-  background: lighten(#576CB7, 25);
+  background: lighten($testColor, 25);
 }
 .color2 {
-  background: lighten(#576CB7, 20);
+  background: lighten($testColor, 20);
 }
 .color3 {
-  background: lighten(#576CB7, 15);
+  background: lighten($testColor, 15);
 }
 .color4 {
-  background: lighten(#576CB7, 10);
+  background: lighten($testColor, 10);
 }
 .color5 {
-  background: lighten(#576CB7, 5);
+  background: lighten($testColor, 5);
 }
 .color6 {
-  background: #576CB7;
+  background: $testColor;
 }
 .color7 {
-  background: darken(#576CB7, 5);
+  background: darken($testColor, 5);
 }
 .color8 {
-  background: darken(#576CB7, 10);
+  background: darken($testColor, 10);
 }
 .color9 {
-  background: darken(#576CB7, 15);
+  background: darken($testColor, 15);
 }
 .color10 {
-  background: darken(#576CB7, 20);
+  background: darken($testColor, 20);
 }
 .color11 {
-  background: darken(#576CB7, 25);
+  background: darken($testColor, 25);
 }

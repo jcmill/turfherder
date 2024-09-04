@@ -7,22 +7,22 @@ $colorScale: 3;
 
 $colors: (
     'a': (
-      value: #5375EE,
+      value: #e8cdcd,
       name: 'blue',
       scale: $colorScale
     ),
     'b': (
-      value: #576CB7,
+      value: #d62121,
       name: 'red',
       scale: $colorScale
     ),
     'c': (
-      value: #3C4D67,
+      value: #2b2d33,
       name: 'yellow',
       scale: $colorScale
     ),
     'd': (
-      value: #283571,
+      value: #261b04,
       name: 'yellow',
       scale: $colorScale
     ),
@@ -32,13 +32,15 @@ $colors: (
       scale: $colorScale
     ),
     'f': (
-      value: #0c8484,
+      value: #29b729,
       name: 'grreen',
       scale: $colorScale
     ),
     'g': (
-      value: #0000ff,
-      name: 'yellow',
-      scale: $colorScale
+      value: #2957cc,
+      name: 'blue',
+      scale: $colorScale,
+      -1: #000099, 
+      1: #0000ff
     )
   );

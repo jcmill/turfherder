@@ -157,90 +157,106 @@ input, button, textarea, select {
   width: 10vw;
 }
 
-.color50 {
-  background: #67ffff;
-}
-
 .color100 {
-  background: #30ffff;
+  background: #e2eaff;
 }
 
 .color200 {
-  background: #02fcfc;
+  background: #b0c6fd;
 }
 
 .color300 {
-  background: #08cbcb;
+  background: #87a7f7;
 }
 
 .color400 {
-  background: #0ba4a4;
+  background: #678df0;
 }
 
 .color500 {
-  background: #0c8484;
+  background: #4d79e8;
 }
 
 .color600 {
-  background: #0c7171;
+  background: #3968e0;
 }
 
 .color700 {
-  background: #076060;
+  background: #0000ff;
 }
 
 .color800 {
-  background: #034848;
+  background: #2957cc;
 }
 
 .color900 {
-  background: #002929;
+  background: #000099;
 }
 
 .color1000 {
-  background: #000101;
+  background: #1a48be;
+}
+
+.color1100 {
+  background: #113fb2;
+}
+
+.color1200 {
+  background: #0833a1;
+}
+
+.color1300 {
+  background: #002788;
+}
+
+.color1400 {
+  background: #001c62;
+}
+
+.color1500 {
+  background: #000f35;
 }
 
 .color1 {
-  background: #b0badd;
+  background: #8da6e8;
 }
 
 .color2 {
-  background: #9eaad6;
+  background: #7796e4;
 }
 
 .color3 {
-  background: #8d9bce;
+  background: #6285df;
 }
 
 .color4 {
-  background: #7b8bc6;
+  background: #4d75db;
 }
 
 .color5 {
-  background: #697cbf;
+  background: #3865d7;
 }
 
 .color6 {
-  background: #576CB7;
+  background: #2957cc;
 }
 
 .color7 {
-  background: #495fab;
+  background: #254eb7;
 }
 
 .color8 {
-  background: #425599;
+  background: #2045a2;
 }
 
 .color9 {
-  background: #3a4b87;
+  background: #1c3c8c;
 }
 
 .color10 {
-  background: #324176;
+  background: #183377;
 }
 
 .color11 {
-  background: #2b3764;
+  background: #142a62;
 }
